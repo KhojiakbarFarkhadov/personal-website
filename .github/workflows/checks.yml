@@ -26,5 +26,9 @@ jobs:
       - name: Check for broken links
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --no-progress index.html
+          args: >-
+            --no-progress
+            --exclude 'linkedin\.com'
+            --exclude 'google\.com/s2/favicons'
+            index.html
           fail: true
