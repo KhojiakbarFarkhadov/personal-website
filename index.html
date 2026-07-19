@@ -1,365 +1,494 @@
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farxodov Xojiakbar — Software Engineer &amp; Technical Writer</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- JS mavjudligini erta belgilaydi (animatsiya "flash" bo'lmasligi uchun) -->
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khojiakbar Farkhadov — Technical Writer &amp; Software Engineer</title>
+  <meta name="description" content="Khojiakbar Farkhadov — Technical Writer (API &amp; developer documentation) with a software engineering background. 5+ years building and documenting complex systems across fintech, banking, and e-commerce.">
+  <meta name="author" content="Khojiakbar Farkhadov">
+  <meta name="theme-color" content="#070b14">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Khojiakbar Farkhadov — Technical Writer &amp; Software Engineer">
+  <meta property="og:description" content="API &amp; developer documentation specialist with 5+ years of software engineering background. Docs-as-code, OpenAPI, .NET, PHP.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <noscript><style>.reveal{opacity:1 !important;transform:none !important}</style></noscript>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Khojiakbar Farkhadov",
+    "jobTitle": "Technical Writer",
+    "email": "mailto:f.f.xojiakbar@gmail.com",
+    "alumniOf": "Inha University in Tashkent",
+    "worksFor": { "@type": "Organization", "name": "FIDO-BIZNES" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Tashkent", "addressCountry": "UZ" },
+    "sameAs": ["https://www.linkedin.com/in/khojiakbar-farkhadov-8b612424b/"]
+  }
+  </script>
 </head>
 <body>
 
-    <!-- ===== Navigatsiya ===== -->
-    <header class="navbar">
-        <div class="container navbar-inner">
-            <a href="#hero" class="logo">Xojiakbar<span>.</span></a>
-            <nav class="nav-links">
-                <a href="#about"><span class="nav-num">01.</span> Men haqimda</a>
-                <a href="#experience"><span class="nav-num">02.</span> Tajriba</a>
-                <a href="#projects"><span class="nav-num">03.</span> Loyihalar</a>
-                <a href="#contact"><span class="nav-num">04.</span> Bog'lanish</a>
-            </nav>
-            <a href="https://t.me/XojiakbarFarkhadov" class="nav-icon" target="_blank"
-               rel="noopener noreferrer" aria-label="Telegram">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
-                    <path d="M9.78 15.9l-.4 5.63c.57 0 .82-.25 1.12-.54l2.69-2.57 5.57 4.08c1.02.56 1.75.27 2.02-.94l3.66-17.16.01-.01c.32-1.5-.54-2.09-1.53-1.72L1.16 9.36C-.3 9.94-.28 10.77.91 11.14l5.5 1.71L19.2 4.86c.6-.4 1.15-.18.7.22L9.78 15.9z"/>
-                </svg>
-            </a>
-            <a href="https://www.linkedin.com/in/khojiakbar-farkhadov-8b612424b/"
-               class="btn btn-outline btn-sm nav-cta"
-               target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  <div class="progress-bar" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="nav__logo" href="#top" aria-label="Home">&lt;KF /&gt;</a>
+      <nav class="nav__menu" id="nav-menu" aria-label="Primary">
+        <a href="#about"><span class="num">01.</span>About</a>
+        <a href="#road"><span class="num">02.</span>Road</a>
+        <a href="#projects"><span class="num">03.</span>Projects</a>
+        <a href="#skills"><span class="num">04.</span>Skills</a>
+        <a href="#contact"><span class="num">05.</span>Contact</a>
+      </nav>
+      <button type="button" class="nav__burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="hero__eyebrow reveal">Hi, my name is</p>
+          <h1 class="hero__name reveal" data-delay="80">Khojiakbar Farkhadov.</h1>
+          <h2 class="hero__type reveal" data-delay="160"><span id="typewriter">I write docs developers actually read.</span><span class="caret" aria-hidden="true"></span></h2>
+          <p class="hero__lead reveal" data-delay="240">
+            Technical writer with a software engineer's background — 5+ years building and
+            documenting complex systems across fintech, banking, and e-commerce.
+            Currently owning developer &amp; user documentation at <strong>FIDO-BIZNES</strong>.
+          </p>
+          <div class="hero__cta reveal" data-delay="320">
+            <a class="btn btn--solid" href="#road">Walk the road</a>
+            <a class="btn" href="#contact">Get in touch</a>
+          </div>
+          <ul class="hero__stats reveal" data-delay="400">
+            <li><span class="stat__num">5+</span><span class="stat__label">years in software</span></li>
+            <li><span class="stat__num">6</span><span class="stat__label">products built &amp; documented</span></li>
+            <li><span class="stat__num">4+</span><span class="stat__label">years teaching &amp; mentoring</span></li>
+          </ul>
         </div>
-    </header>
 
-    <!-- ===== Hero bo'limi ===== -->
-    <section id="hero" class="hero">
-        <div class="container hero-inner">
-
-            <!-- Chap ustun: matn -->
-            <div class="hero-text" data-reveal>
-                <p class="hero-greeting">Assalomu alaykum, men —</p>
-                <h1 class="hero-name">Farxodov Xojiakbar</h1>
-                <h2 class="hero-role">Software Engineer &amp; Technical Writer</h2>
-                <p class="hero-desc">
-                    Ishonchli dasturiy mahsulotlar quraman va murakkab texnik
-                    yechimlarni aniq, tushunarli hujjatlarga aylantiraman.
-                    Kodni sifat bilan, hujjatni mazmun bilan yozishga
-                    e'tibor qarataman.
-                </p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn btn-primary">Loyihalarni ko'rish</a>
-                    <a href="#contact" class="btn btn-outline">Bog'lanish</a>
-                </div>
+        <div class="hero__term reveal reveal--right" data-delay="300">
+          <div class="term">
+            <div class="term__bar">
+              <span class="term__dot term__dot--r"></span>
+              <span class="term__dot term__dot--y"></span>
+              <span class="term__dot term__dot--g"></span>
+              <span class="term__title">khojiakbar@tashkent: ~</span>
             </div>
-
-            <!-- O'ng ustun: profil rasmi -->
-            <div class="hero-image" data-reveal>
-                <div class="hero-photo">
-                    <span class="hero-photo-accent"></span>
-                    <img src="me.jpeg" alt="Farxodov Xojiakbar portret rasmi">
-                </div>
+            <div class="term__body">
+              <p><span class="term__prompt">$</span> <span class="term__cmd">whoami</span></p>
+              <p class="term__out">Technical Writer · API &amp; Developer Documentation<br>ex–Software Engineer (.NET / PHP / JS)</p>
+              <p><span class="term__prompt">$</span> <span class="term__cmd">ls ~/docs</span></p>
+              <p class="term__out">api-references/&nbsp;&nbsp;integration-guides/&nbsp;&nbsp;BRDs/<br>user-manuals/&nbsp;&nbsp;release-notes/&nbsp;&nbsp;knowledge-base/</p>
+              <p><span class="term__prompt">$</span> <span class="term__cmd">git log --oneline -1 career.md</span></p>
+              <p class="term__out">a1f2d34 feat: software engineer → technical writer</p>
+              <p><span class="term__prompt">$</span> <span class="term__cmd">echo $STATUS</span></p>
+              <p class="term__out"><span class="term__ok">●</span> Middle Technical Writer @ FIDO-BIZNES — open to remote<span class="blink" aria-hidden="true">▍</span></p>
             </div>
-
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- ===== Men haqimda bo'limi ===== -->
-    <section id="about" class="section">
-        <div class="container">
-            <div class="section-head" data-reveal>
-                <span class="section-num">01</span>
-                <h2 class="section-title">Men haqimda</h2>
-                <span class="section-line"></span>
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section about">
+      <div class="container">
+        <header class="section-head reveal">
+          <h2><span class="num">01.</span>About me</h2>
+        </header>
+        <div class="about__grid">
+          <div class="about__prose reveal" data-delay="80">
+            <p>
+              I'm a <strong>Middle Technical Writer</strong> with a strong software engineering
+              background (<strong>.NET, PHP, JavaScript</strong>) and more than five years of
+              experience building — and explaining — complex software systems.
+            </p>
+            <p>
+              My core focus is developer- and user-facing documentation:
+              <strong>REST API references, integration guides, BRDs, user manuals, release notes,
+              and internal knowledge bases</strong>. I work in docs-as-code workflows using Git and
+              Markdown, and collaborate closely with engineers, analysts, and product teams to keep
+              documentation accurate, up to date, and easy to use.
+            </p>
+            <p>
+              What makes my writing different is simple: I've spent years on the other side of the
+              docs. I've designed the APIs, written the stored procedures, and debugged the
+              integrations — so when I document a system, I document it the way an engineer
+              actually needs it.
+            </p>
+            <p>
+              Currently I work at <strong>FIDO-BIZNES</strong>, where I design and maintain
+              documentation for financial and business applications, including detailed API docs
+              and Business Requirement Documents.
+            </p>
+          </div>
+          <aside class="about__facts reveal reveal--right" data-delay="160">
+            <h3 class="facts__title">// fast_facts</h3>
+            <ul>
+              <li><span>role</span><strong>Middle Technical Writer</strong></li>
+              <li><span>company</span><strong>FIDO-BIZNES</strong></li>
+              <li><span>degree</span><strong>B.S. Software Engineering — Inha University in Tashkent</strong></li>
+              <li><span>base</span><strong>Tashkent, UZ · remote-friendly</strong></li>
+            </ul>
+            <div class="about__chips">
+              <span class="chip">API Documentation</span>
+              <span class="chip">Docs-as-Code</span>
+              <span class="chip">Swagger / OpenAPI</span>
+              <span class="chip">BRDs</span>
             </div>
-            <div class="about-grid" data-reveal>
-                <div class="about-text">
-                    <p>
-                        Men Software Engineer va Technical Writer sifatida
-                        ishlayman. Dasturiy ta'minot ishlab chiqish bilan bir
-                        qatorda, texnik hujjatlarni sodda va tushunarli tilda
-                        tayyorlashga ixtisoslashganman.
-                    </p>
-                    <p>
-                        Ishimda uch narsani muhim deb bilaman: toza kod, aniq
-                        hujjat va foydalanuvchi qulayligi. Har bir vazifaga
-                        puxtalik bilan yondashaman va natijaning uzoq muddatda
-                        ham qulay bo'lishiga e'tibor beraman.
-                    </p>
-                </div>
-                <aside class="about-focus">
-                    <h3 class="about-focus-title">Yo'nalishlarim</h3>
-                    <ul class="focus-list">
-                        <li>Software Engineering</li>
-                        <li>Technical Writing</li>
-                        <li>Texnik hujjatlar</li>
-                        <li>Veb platformalar</li>
-                    </ul>
-                </aside>
-            </div>
-
-            <!-- Ambitsiyalar / maqsadlar -->
-            <div class="goals" data-reveal>
-                <h3 class="goals-title">Maqsadlarim</h3>
-                <p class="goals-lead">
-                    Kelajakda yirik raqamli mahsulotlar, foydalanuvchi uchun
-                    qulay platformalar va sifatli texnik yechimlar yaratishga
-                    intilaman.
-                </p>
-                <div class="goals-grid">
-                    <div class="goal-card">
-                        <div class="goal-icon">🚀</div>
-                        <p class="goal-text">Zamonaviy raqamli mahsulotlar yaratish</p>
-                    </div>
-                    <div class="goal-card">
-                        <div class="goal-icon">🎯</div>
-                        <p class="goal-text">Foydalanuvchi uchun qulay tizimlar qurish</p>
-                    </div>
-                    <div class="goal-card">
-                        <div class="goal-icon">✍️</div>
-                        <p class="goal-text">Texnik g'oyalarni sodda va tushunarli yetkazish</p>
-                    </div>
-                    <div class="goal-card">
-                        <div class="goal-icon">📈</div>
-                        <p class="goal-text">Katta platformalarda ishlab, professional o'sishni davom ettirish</p>
-                    </div>
-                </div>
-            </div>
+          </aside>
         </div>
+      </div>
     </section>
 
-    <!-- ===== Tajriba bo'limi ===== -->
-    <section id="experience" class="section section-alt">
-        <div class="container">
-            <div class="section-head" data-reveal>
-                <span class="section-num">02</span>
-                <h2 class="section-title">Tajriba</h2>
-                <span class="section-line"></span>
-            </div>
-            <div class="experience-wrap">
-                <div class="experience-card" data-reveal>
-                    <div class="experience-header">
-                        <div>
-                            <h3 class="experience-role">Software Engineer / Technical Writer</h3>
-                            <p class="experience-company">Fido-Biznes</p>
-                        </div>
-                        <span class="experience-badge">
-                            <span class="experience-badge-dot"></span>
-                            Hozirgi ish joyim
-                        </span>
-                    </div>
-                    <p class="experience-text">
-                        Ayni paytda Fido-Biznes kompaniyasida faoliyat
-                        yuritmoqdaman. Dasturiy yechimlarni ishlab chiqish va
-                        texnik hujjatlarni tayyorlash bo'yicha ishlarni olib
-                        boraman.
-                    </p>
-                </div>
+    <!-- ============ ROAD ============ -->
+    <section id="road" class="section road">
+      <div class="container">
+        <header class="section-head reveal">
+          <h2><span class="num">02.</span>The Road</h2>
+          <p class="section-head__sub">
+            Nine years on one line — the degree, the classrooms, and the companies. Each milestone
+            is brief by design; the full project stories live <a href="#projects">one section down</a>.
+          </p>
+          <ul class="road__legend" aria-hidden="true">
+            <li data-type="degree"><span></span>Degree</li>
+            <li data-type="activity"><span></span>Activities</li>
+            <li data-type="work"><span></span>Work</li>
+            <li data-type="current"><span></span>Now</li>
+          </ul>
+        </header>
 
-                <div class="experience-card" data-reveal>
-                    <div class="experience-header">
-                        <div>
-                            <h3 class="experience-role">Mentor</h3>
-                            <p class="experience-company">Artel Technical School</p>
-                        </div>
-                        <span class="experience-badge experience-badge-alt">Mentorlik</span>
-                    </div>
-                    <p class="experience-text">
-                        Artel Technical School'da o'quvchilarga mentorlik
-                        qildim — texnik yo'nalish, dasturlash asoslari va
-                        kasbiy rivojlanish bo'yicha bilim va tajribamni ulashdim.
-                    </p>
-                </div>
-            </div>
+        <div class="road__wrap">
+          <p class="road__cap road__cap--start reveal">start · sep 2017</p>
+          <div class="road__line" aria-hidden="true"><span class="road__progress"></span></div>
+
+          <ol class="road__list">
+
+            <li class="road__item" data-side="left" data-type="degree">
+              <div class="road__node"><span class="road__dot"></span><span class="road__year">2017</span></div>
+              <article class="road__card reveal reveal--left">
+                <div class="road__meta"><span class="badge badge--degree">Degree</span><span class="road__dates">Sep 2017 — May 2021</span></div>
+                <h3>B.S. Software Engineering · Inha University in Tashkent</h3>
+                <p>The starting line — algorithms, databases, and the first serious lines of code. GPA 3.6.</p>
+              </article>
+            </li>
+
+            <li class="road__item" data-side="right" data-type="activity">
+              <div class="road__node"><span class="road__dot"></span><span class="road__year">2018</span></div>
+              <article class="road__card reveal reveal--right">
+                <div class="road__meta"><span class="badge badge--activity">Activity</span><span class="road__dates">Mar — Dec 2018 · part-time</span></div>
+                <h3>Web Tutor · Codecraft.uz</h3>
+                <p>First time explaining code to complete beginners — web basics, HTML/CSS, and JavaScript.</p>
+              </article>
+            </li>
+
+            <li class="road__item" data-side="left" data-type="activity">
+              <div class="road__node"><span class="road__dot"></span><span class="road__year">2019</span></div>
+              <article class="road__card reveal reveal--left">
+                <div class="road__meta"><span class="badge badge--activity">Activity</span><span class="road__dates">Sep 2019 — May 2023 · part-time</span></div>
+                <h3>Lead Tutor · Artel Technical School</h3>
+                <p>Nearly four years of teaching programming — in parallel with university and full-time jobs.</p>
+              </article>
+            </li>
+
+            <li class="road__item" data-side="right" data-type="work">
+              <div class="road__node"><span class="road__dot"></span><span class="road__year">2020</span></div>
+              <article class="road__card reveal reveal--right">
+                <div class="road__meta"><span class="badge badge--work">Work</span><span class="road__dates">Jun 2020 — Jun 2021</span></div>
+                <h3>Back End Developer · Calypso IS</h3>
+                <p>First production backend: PHP/Laravel APIs and schemas powering agromart.uz.</p>
+              </article>
+            </li>
+
+            <li class="road__item" data-side="left" data-type="work">
+              <div class="road__node"><span class="road__dot"></span><span class="road__year">2021</span></div>
+              <article class="road__card reveal reveal--left">
+                <div class="road__meta"><span class="badge badge--work">Work</span><span class="road__dates">Jul — Aug 2021</span></div>
+                <h3>Back End Developer · CLICK</h3>
+                <p>A short sprint inside one of Uzbekistan's largest payment services.</p>
+              </article>
+            </li>
+
+            <li class="road__item" data-side="right" data-type="work">
+              <div class="road__node"><span class="road__dot"></span><span class="road__year">2021</span></div>
+              <article class="road__card reveal reveal--right">
+                <div class="road__meta"><span class="badge badge--work">Work</span><span class="road__dates">Oct 2021 — May 2023</span></div>
+                <h3>Freelance Back End Developer</h3>
+                <p>Independent client work on .NET and PHP backends — scoping, building, delivering.</p>
+              </article>
+            </li>
+
+            <li class="road__item" data-side="left" data-type="work">
+              <div class="road__node"><span class="road__dot"></span><span class="road__year">2022</span></div>
+              <article class="road__card reveal reveal--left">
+                <div class="road__meta"><span class="badge badge--work">Work</span><span class="road__dates">Apr — Dec 2022</span></div>
+                <h3>Back End Developer · Napster Software Solutions</h3>
+                <p>Kept Expro.uz stable and scalable on .NET Core 3.1 — features, SQL design, documented endpoints.</p>
+              </article>
+            </li>
+
+            <li class="road__item" data-side="right" data-type="work">
+              <div class="road__node"><span class="road__dot"></span><span class="road__year">2023</span></div>
+              <article class="road__card reveal reveal--right">
+                <div class="road__meta"><span class="badge badge--work">Work</span><span class="road__dates">May — Dec 2023</span></div>
+                <h3>Software Engineer · Uzum</h3>
+                <p>Microservices at e-commerce scale — .NET, MediatR, xUnit, and BPMN-driven CRM integrations.</p>
+              </article>
+            </li>
+
+            <li class="road__item" data-side="left" data-type="work">
+              <div class="road__node"><span class="road__dot"></span><span class="road__year">2024</span></div>
+              <article class="road__card reveal reveal--left">
+                <div class="road__meta"><span class="badge badge--work">Work</span><span class="road__dates">Jan — May 2024</span></div>
+                <h3>Software Engineer · ANORBANK</h3>
+                <p>Banking-grade backend services in C#/ASP.NET — with documentation baked into every delivery.</p>
+              </article>
+            </li>
+
+            <li class="road__item" data-side="right" data-type="current">
+              <div class="road__node"><span class="road__dot"></span><span class="road__year">now</span></div>
+              <article class="road__card reveal reveal--right">
+                <div class="road__meta"><span class="badge badge--current"><span class="pulse"></span>You are here</span><span class="road__dates">Jul 2024 — Present</span></div>
+                <h3>Middle Technical Writer · FIDO-BIZNES</h3>
+                <p>The pivot: an engineering background became a writing superpower. Owning documentation end-to-end for financial systems.</p>
+              </article>
+            </li>
+
+          </ol>
+
+          <p class="road__cap road__cap--end reveal"><span class="term__prompt">$</span> next-milestone <span class="blink" aria-hidden="true">▍</span></p>
         </div>
+      </div>
     </section>
 
-    <!-- ===== Loyihalar bo'limi ===== -->
-    <section id="projects" class="section">
-        <div class="container">
-            <div class="section-head" data-reveal>
-                <span class="section-num">03</span>
-                <h2 class="section-title">Loyihalar</h2>
-                <span class="section-line"></span>
-            </div>
-            <div class="projects-grid">
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <header class="section-head reveal">
+          <h2><span class="num">03.</span>Projects</h2>
+          <p class="section-head__sub">
+            The road shows <em>where</em> — this is <em>what got built</em>. Expanded case studies
+            of the systems I've engineered and documented.
+          </p>
+        </header>
 
-                <article class="project-card" data-reveal>
-                    <div class="project-top">
-                        <div class="project-icon">
-                            <img src="https://www.google.com/s2/favicons?domain=agromart.uz&sz=128"
-                                 alt="Agromart.uz logotipi"
-                                 onerror="this.parentNode.textContent='🌾'">
-                        </div>
-                        <span class="project-tag">Platforma</span>
-                    </div>
-                    <h3 class="project-name">Agromart.uz</h3>
-                    <p class="project-text">
-                        Qishloq xo'jaligi mahsulotlari uchun onlayn savdo
-                        platformasi. Fermerlar va xaridorlarni bevosita
-                        bog'laydi.
-                    </p>
-                </article>
-
-                <article class="project-card" data-reveal>
-                    <div class="project-top">
-                        <div class="project-icon">
-                            <img src="https://www.google.com/s2/favicons?domain=coozin.uz&sz=128"
-                                 alt="Coozin.uz logotipi"
-                                 onerror="this.parentNode.textContent='🍽️'">
-                        </div>
-                        <span class="project-tag">Mahsulot</span>
-                    </div>
-                    <h3 class="project-name">Coozin.uz</h3>
-                    <p class="project-text">
-                        Oshxona va oziq-ovqat sohasi uchun raqamli xizmatlarni
-                        taqdim etuvchi zamonaviy veb mahsulot.
-                    </p>
-                </article>
-
-                <article class="project-card" data-reveal>
-                    <div class="project-top">
-                        <div class="project-icon">
-                            <img src="https://www.google.com/s2/favicons?domain=uzum.uz&sz=128"
-                                 alt="Uzum Market logotipi"
-                                 onerror="this.parentNode.textContent='🛒'">
-                        </div>
-                        <span class="project-tag">Marketpleys</span>
-                    </div>
-                    <h3 class="project-name">Uzum Market</h3>
-                    <p class="project-text">
-                        O'zbekistonning yirik onlayn marketpleysi. Keng
-                        ko'lamli elektron tijorat ekotizimi bilan bog'liq
-                        loyiha.
-                    </p>
-                </article>
-
-                <article class="project-card" data-reveal>
-                    <div class="project-top">
-                        <div class="project-icon">
-                            <img src="https://www.google.com/s2/favicons?domain=anorbank.uz&sz=128"
-                                 alt="Anor Nasiya logotipi"
-                                 onerror="this.parentNode.textContent='🏦'">
-                        </div>
-                        <span class="project-tag">Fintech</span>
-                    </div>
-                    <h3 class="project-name">Anor Nasiya</h3>
-                    <p class="project-text">
-                        Nasiya savdo va moliyaviy xizmatlarni raqamlashtiruvchi
-                        fintech platforma. Foydalanuvchilar uchun qulay to'lov
-                        yechimlari.
-                    </p>
-                </article>
-
-                <article class="project-card" data-reveal>
-                    <div class="project-top">
-                        <div class="project-icon">
-                            <img src="https://www.google.com/s2/favicons?domain=fido-biznes.uz&sz=128"
-                                 alt="IABS logotipi"
-                                 onerror="this.parentNode.textContent='🏛️'">
-                        </div>
-                        <span class="project-tag">Banking</span>
-                    </div>
-                    <h3 class="project-name">IABS</h3>
-                    <p class="project-text">
-                        Tijorat banklari uchun to'liq avtomatlashtirilgan
-                        banking tizimi. Bank operatsiyalarini 24/7 rejimida
-                        boshqarish imkonini beruvchi keng qamrovli platforma.
-                    </p>
-                </article>
-
-                <article class="project-card" data-reveal>
-                    <div class="project-top">
-                        <div class="project-icon">🕌</div>
-                        <span class="project-tag">Islamic Finance</span>
-                    </div>
-                    <h3 class="project-name">Islamic Finance</h3>
-                    <p class="project-text">
-                        Islom moliyasi tamoyillariga asoslangan halol va
-                        foizsiz moliyaviy yechimlar. Shariatga mos bank
-                        mahsulotlari va xizmatlari.
-                    </p>
-                </article>
-
-            </div>
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+          <button type="button" class="filter-btn active" data-filter="all">All</button>
+          <button type="button" class="filter-btn" data-filter="docs">Documentation</button>
+          <button type="button" class="filter-btn" data-filter="backend">Backend</button>
+          <button type="button" class="filter-btn" data-filter="teaching">Teaching</button>
         </div>
+
+        <div class="projects__grid">
+
+          <article class="project project--featured reveal" data-cat="docs">
+            <div class="project__meta">
+              <span class="project__co">FIDO-BIZNES · Middle Technical Writer · Jul 2024 — Present</span>
+              <span class="badge badge--current"><span class="pulse"></span>Current</span>
+            </div>
+            <h3>Financial Systems Documentation Hub</h3>
+            <p class="project__context">
+              FIDO-BIZNES builds core financial and business applications. I own the documentation
+              lifecycle end-to-end — planning, writing, reviewing, publishing, and continuously
+              updating it as the products evolve.
+            </p>
+            <ul class="project__list">
+              <li>Design and maintain <strong>REST API references</strong> and integration guides for financial platforms, working from Swagger/OpenAPI specs alongside engineers.</li>
+              <li>Author <strong>Business Requirement Documents (BRDs)</strong> that keep developers, analysts, and business stakeholders aligned on scope and behavior.</li>
+              <li>Run documentation as code — <strong>Markdown sources, Git branching, PR reviews, and CI-based publishing</strong> keep docs versioned together with the codebase.</li>
+              <li>Rebuilt the <strong>information architecture</strong> of user manuals and the internal knowledge base, cutting onboarding time for new engineers and analysts.</li>
+              <li>Maintain <strong>release notes</strong> and user manuals across every product update, in close collaboration with developers, testers, and business teams.</li>
+            </ul>
+            <div class="project__stack">
+              <span class="chip">Markdown</span><span class="chip">Git</span><span class="chip">Swagger / OpenAPI</span><span class="chip">MadCap Flare</span><span class="chip">Docs-as-Code</span><span class="chip">CI Publishing</span>
+            </div>
+          </article>
+
+          <article class="project reveal" data-cat="backend" data-delay="80">
+            <div class="project__meta">
+              <span class="project__co">ANORBANK · Software Engineer · 2024</span>
+            </div>
+            <h3>Core Banking Backend Services</h3>
+            <p class="project__context">
+              Backend engineering for a digital bank's production systems — where reliability and
+              documented decisions are non-negotiable.
+            </p>
+            <ul class="project__list">
+              <li>Designed and implemented backend services, APIs, and database interactions using <strong>C#, ASP.NET Web Forms, and Entity Framework</strong>.</li>
+              <li>Translated analysts' functional and non-functional requirements into reliable technical solutions and documented key design decisions.</li>
+              <li>Participated in code reviews and performance optimization of critical services, contributing to architecture and quality standards.</li>
+              <li>Produced internal documentation for APIs, data flows, and system components — supporting operations, onboarding, and cross-team collaboration.</li>
+            </ul>
+            <div class="project__stack">
+              <span class="chip">C#</span><span class="chip">ASP.NET</span><span class="chip">Entity Framework</span><span class="chip">SQL Server</span><span class="chip">Banking</span>
+            </div>
+          </article>
+
+          <article class="project reveal" data-cat="backend" data-delay="160">
+            <div class="project__meta">
+              <span class="project__co">Uzum · Software Engineer · 2023</span>
+            </div>
+            <h3>E-commerce Microservices at Scale</h3>
+            <p class="project__context">
+              Uzum runs Uzbekistan's leading e-commerce ecosystem. I built and maintained the
+              microservices behind it.
+            </p>
+            <ul class="project__list">
+              <li>Developed scalable backend microservices on <strong>.NET</strong> using modern architectural patterns.</li>
+              <li>Enforced validation, messaging, and testing standards with <strong>FluentValidation, MediatR, and xUnit</strong> — and documented those standards for the team.</li>
+              <li>Designed SQL Server stored procedures and triggers, with documentation covering database behavior and integration scenarios.</li>
+              <li>Integrated business models into <strong>CRM (BPMN) workflows</strong> using TypeScript-based low-code tools, writing technical descriptions of processes.</li>
+            </ul>
+            <div class="project__stack">
+              <span class="chip">ASP.NET Core</span><span class="chip">Microservices</span><span class="chip">MediatR</span><span class="chip">xUnit</span><span class="chip">SQL Server</span><span class="chip">BPMN</span>
+            </div>
+          </article>
+
+          <article class="project reveal" data-cat="backend" data-delay="80">
+            <div class="project__meta">
+              <span class="project__co">Napster Software Solutions · Back End Developer · 2022</span>
+            </div>
+            <h3>Expro.uz Platform</h3>
+            <p class="project__context">
+              Kept a live B2B platform stable while shipping new features across the whole stack.
+            </p>
+            <ul class="project__list">
+              <li>Maintained and improved the main Expro.uz platform on <strong>.NET Core 3.1</strong>, focusing on stability and scalability.</li>
+              <li>Shipped features using <strong>AJAX, jQuery, JSON, and REST APIs</strong> — documenting key endpoints and integration steps.</li>
+              <li>Designed SQL Server tables, views, functions, and triggers; documented data models and relationships for future development.</li>
+              <li>Applied <strong>OOP, SOLID, dependency injection, and design patterns</strong> to keep the codebase clean — and shared best practices with the team.</li>
+            </ul>
+            <div class="project__stack">
+              <span class="chip">.NET Core 3.1</span><span class="chip">REST APIs</span><span class="chip">jQuery / AJAX</span><span class="chip">SQL Server</span><span class="chip">SOLID</span>
+            </div>
+          </article>
+
+          <article class="project reveal" data-cat="backend" data-delay="160">
+            <div class="project__meta">
+              <span class="project__co">Calypso IS · Back End Developer · 2020 — 2021</span>
+            </div>
+            <h3>Agromart.uz Marketplace</h3>
+            <p class="project__context">
+              First long-term production role: the backend behind an agricultural marketplace and
+              its related services.
+            </p>
+            <ul class="project__list">
+              <li>Built and supported the <strong>PHP/Laravel</strong> backend powering agromart.uz and related services.</li>
+              <li>Designed database schemas and <strong>REST APIs</strong>, documenting endpoints and data flows for internal and external consumers.</li>
+              <li>Developed and maintained <strong>unit tests</strong> to keep backend services reliable and stable.</li>
+              <li>Worked directly with front-end developers and business stakeholders, explaining technical solutions and integration steps.</li>
+            </ul>
+            <div class="project__stack">
+              <span class="chip">PHP</span><span class="chip">Laravel</span><span class="chip">MySQL</span><span class="chip">REST APIs</span><span class="chip">PHPUnit</span>
+            </div>
+          </article>
+
+          <article class="project reveal" data-cat="teaching" data-delay="80">
+            <div class="project__meta">
+              <span class="project__co">Codecraft.uz → Artel Technical School · Tutor → Lead Tutor · 2018 — 2023</span>
+            </div>
+            <h3>Programming Curriculum &amp; Learning Content</h3>
+            <p class="project__context">
+              4+ years of teaching alongside university and engineering jobs — where I learned that
+              explaining something clearly is a skill of its own.
+            </p>
+            <ul class="project__list">
+              <li>Taught web fundamentals, advanced <strong>HTML/CSS, and JavaScript</strong> to children and complete beginners at Codecraft.uz.</li>
+              <li>Led tutoring programs at Artel Technical School for nearly four years as <strong>Lead Tutor</strong>.</li>
+              <li>Created simple learning resources and examples — effectively introductory documentation for people writing their first line of code.</li>
+              <li>This is where documentation started for me: if a 12-year-old can follow your guide, a developer can too.</li>
+            </ul>
+            <div class="project__stack">
+              <span class="chip">HTML / CSS</span><span class="chip">JavaScript</span><span class="chip">Curriculum Design</span><span class="chip">Mentoring</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
     </section>
 
-    <!-- ===== Bog'lanish / CTA bo'limi ===== -->
-    <section id="contact" class="section section-alt contact">
-        <div class="container">
-            <div class="section-head section-head-center" data-reveal>
-                <span class="section-num">04</span>
-                <h2 class="section-title">Bog'lanish</h2>
-            </div>
-            <div class="contact-box" data-reveal>
-                <h3 class="contact-heading">Keling, birga ishlaymiz</h3>
-                <p class="contact-text">
-                    Loyiha, hamkorlik yoki savollaringiz bo'lsa, quyidagi
-                    ijtimoiy tarmoqlar orqali men bilan bemalol bog'lanishingiz
-                    mumkin. Har qanday taklifni ochiq qabul qilaman.
-                </p>
-                <a href="https://www.linkedin.com/in/khojiakbar-farkhadov-8b612424b/"
-                   class="btn btn-primary btn-large"
-                   target="_blank" rel="noopener noreferrer">
-                    LinkedIn orqali yozish
-                </a>
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <header class="section-head reveal">
+          <h2><span class="num">04.</span>Toolbox</h2>
+        </header>
+        <div class="skills__grid">
 
-                <!-- Ijtimoiy tarmoqlar -->
-                <div class="socials">
-                    <a class="social-link" href="https://www.linkedin.com/in/khojiakbar-farkhadov-8b612424b/"
-                       target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
-                            <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1 4.98 2.12 4.98 3.5zM.24 8.25H4.7V24H.24V8.25zM8.34 8.25h4.27v2.15h.06c.6-1.13 2.06-2.32 4.24-2.32 4.54 0 5.37 2.99 5.37 6.88V24h-4.46v-6.99c0-1.67-.03-3.82-2.33-3.82-2.33 0-2.69 1.82-2.69 3.7V24H8.34V8.25z"/>
-                        </svg>
-                        <span>LinkedIn</span>
-                    </a>
-                    <!-- Telegram: '#' o'rniga o'z manzilingizni yozing, masalan https://t.me/username -->
-                    <a class="social-link" href="#" aria-label="Telegram">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
-                            <path d="M9.78 15.9l-.4 5.63c.57 0 .82-.25 1.12-.54l2.69-2.57 5.57 4.08c1.02.56 1.75.27 2.02-.94l3.66-17.16.01-.01c.32-1.5-.54-2.09-1.53-1.72L1.16 9.36C-.3 9.94-.28 10.77.91 11.14l5.5 1.71L19.2 4.86c.6-.4 1.15-.18.7.22L9.78 15.9z"/>
-                        </svg>
-                        <span>Telegram</span>
-                    </a>
-                    <!-- Instagram: '#' o'rniga o'z manzilingizni yozing, masalan https://instagram.com/username -->
-                    <a class="social-link" href="#" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
-                            <path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 01-1.38-.9 3.7 3.7 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 1.44c-3.14 0-3.51.01-4.75.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.75s.01 3.51.07 4.75c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.75.07s3.51-.01 4.75-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.75s-.01-3.51-.07-4.75c-.05-1.15-.24-1.77-.41-2.19a3.6 3.6 0 00-.88-1.35 3.6 3.6 0 00-1.35-.88c-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.75-.07zm0 3.68a4.72 4.72 0 110 9.44 4.72 4.72 0 010-9.44zm0 7.78a3.06 3.06 0 100-6.12 3.06 3.06 0 000 6.12zm6-7.96a1.1 1.1 0 11-2.2 0 1.1 1.1 0 012.2 0z"/>
-                        </svg>
-                        <span>Instagram</span>
-                    </a>
-                </div>
+          <div class="skillcard reveal">
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+              Documentation &amp; Writing
+            </h3>
+            <div class="chips">
+              <span class="chip">API Documentation</span><span class="chip">Docs-as-Code</span><span class="chip">Swagger / OpenAPI</span><span class="chip">Markdown</span><span class="chip">MadCap Flare</span><span class="chip">Developer Guides &amp; SDK Docs</span><span class="chip">Information Architecture</span><span class="chip">BRDs</span><span class="chip">Release Notes</span><span class="chip">Knowledge Bases</span><span class="chip">BPMN</span>
             </div>
+          </div>
+
+          <div class="skillcard reveal" data-delay="100">
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect><rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+              Backend Engineering
+            </h3>
+            <div class="chips">
+              <span class="chip">C#</span><span class="chip">ASP.NET Core</span><span class="chip">.NET Framework</span><span class="chip">ASP.NET MVC / Web Forms</span><span class="chip">Entity Framework</span><span class="chip">PHP</span><span class="chip">Laravel</span><span class="chip">REST APIs</span><span class="chip">Microservices</span><span class="chip">SQL Server</span><span class="chip">MySQL</span><span class="chip">JavaScript</span><span class="chip">jQuery / AJAX</span><span class="chip">TypeScript</span>
+            </div>
+          </div>
+
+          <div class="skillcard reveal" data-delay="200">
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" y1="3" x2="6" y2="15"></line><circle cx="18" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><path d="M18 9a9 9 0 0 1-9 9"></path></svg>
+              Practices &amp; Tools
+            </h3>
+            <div class="chips">
+              <span class="chip">Git</span><span class="chip">Unit Testing (xUnit · PHPUnit)</span><span class="chip">SOLID · KISS · DRY · YAGNI</span><span class="chip">Design Patterns</span><span class="chip">MediatR</span><span class="chip">FluentValidation</span><span class="chip">CI Publishing</span><span class="chip">Code Review</span>
+            </div>
+          </div>
+
         </div>
+      </div>
     </section>
 
-    <!-- ===== Futer ===== -->
-    <footer class="footer">
-        <div class="container footer-inner">
-            <a href="#hero" class="logo footer-logo">Xojiakbar<span>.</span></a>
-            <p class="footer-copy">&copy; <span id="year">2026</span> Farxodov Xojiakbar. Barcha huquqlar himoyalangan.</p>
-            <div class="footer-socials">
-                <a class="footer-social" href="https://www.linkedin.com/in/khojiakbar-farkhadov-8b612424b/"
-                   target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
-                        <path d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1 4.98 2.12 4.98 3.5zM.24 8.25H4.7V24H.24V8.25zM8.34 8.25h4.27v2.15h.06c.6-1.13 2.06-2.32 4.24-2.32 4.54 0 5.37 2.99 5.37 6.88V24h-4.46v-6.99c0-1.67-.03-3.82-2.33-3.82-2.33 0-2.69 1.82-2.69 3.7V24H8.34V8.25z"/>
-                    </svg>
-                </a>
-                <!-- Telegram: '#' o'rniga o'z manzilingizni yozing -->
-                <a class="footer-social" href="#" aria-label="Telegram">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
-                        <path d="M9.78 15.9l-.4 5.63c.57 0 .82-.25 1.12-.54l2.69-2.57 5.57 4.08c1.02.56 1.75.27 2.02-.94l3.66-17.16.01-.01c.32-1.5-.54-2.09-1.53-1.72L1.16 9.36C-.3 9.94-.28 10.77.91 11.14l5.5 1.71L19.2 4.86c.6-.4 1.15-.18.7.22L9.78 15.9z"/>
-                    </svg>
-                </a>
-                <!-- Instagram: '#' o'rniga o'z manzilingizni yozing -->
-                <a class="footer-social" href="#" aria-label="Instagram">
-                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
-                        <path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 01-1.38-.9 3.7 3.7 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 1.44c-3.14 0-3.51.01-4.75.07-1.15.05-1.77.24-2.19.41-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.17.42-.36 1.04-.41 2.19-.06 1.24-.07 1.61-.07 4.75s.01 3.51.07 4.75c.05 1.15.24 1.77.41 2.19.21.55.47.94.88 1.35.41.41.8.67 1.35.88.42.17 1.04.36 2.19.41 1.24.06 1.61.07 4.75.07s3.51-.01 4.75-.07c1.15-.05 1.77-.24 2.19-.41.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.17-.42.36-1.04.41-2.19.06-1.24.07-1.61.07-4.75s-.01-3.51-.07-4.75c-.05-1.15-.24-1.77-.41-2.19a3.6 3.6 0 00-.88-1.35 3.6 3.6 0 00-1.35-.88c-.42-.17-1.04-.36-2.19-.41-1.24-.06-1.61-.07-4.75-.07zm0 3.68a4.72 4.72 0 110 9.44 4.72 4.72 0 010-9.44zm0 7.78a3.06 3.06 0 100-6.12 3.06 3.06 0 000 6.12zm6-7.96a1.1 1.1 0 11-2.2 0 1.1 1.1 0 012.2 0z"/>
-                    </svg>
-                </a>
-            </div>
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section contact">
+      <div class="container contact__inner">
+        <p class="contact__eyebrow reveal">05. what's next?</p>
+        <h2 class="reveal" data-delay="80">Let's work together.</h2>
+        <p class="contact__blurb reveal" data-delay="160">
+          Whether it's an API reference that needs an engineer's eye, a docs-as-code pipeline to
+          set up, or a backend that needs building <em>and</em> explaining — my inbox is open.
+          Based in Tashkent, open to remote roles worldwide.
+        </p>
+        <div class="contact__cta reveal" data-delay="240">
+          <a class="btn btn--solid" href="mailto:f.f.xojiakbar@gmail.com">Email me</a>
+          <a class="btn" href="https://www.linkedin.com/in/khojiakbar-farkhadov-8b612424b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
-    </footer>
+        <p class="contact__loc reveal" data-delay="320">Tashkent, Uzbekistan · UTC+5 · remote-friendly</p>
+      </div>
+    </section>
 
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; built by <strong>Khojiakbar Farkhadov</strong></p>
+    </div>
+  </footer>
+
+  <a class="to-top" href="#top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"></path><path d="M5 12l7-7 7 7"></path></svg>
+  </a>
+
+  <script src="jquery.min.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
